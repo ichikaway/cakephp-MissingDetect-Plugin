@@ -2,9 +2,9 @@
 class PropertyComponent extends Object {
 
 		var $message = array(
-			'use' => 'You are using use property in your Controller. use "uses".',
-			'component' => 'You are using component property in your Controller. use "components".',
-			'helper' => 'You are using helper property in your Controller. use "helpers".',
+			'use' => 'You are using "use property" in your Controller. use "uses".',
+			'component' => 'You are using "component property" in your Controller. use "components".',
+			'helper' => 'You are using "helper property" in your Controller. use "helpers".',
 		);
 
 		var $errors = null;
