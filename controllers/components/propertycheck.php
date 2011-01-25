@@ -1,5 +1,5 @@
 <?php
-class PropertyComponent extends Object {
+class PropertycheckComponent extends Object {
 
 		var $message = array(
 			'use' => 'You are using "use property" in your Controller. use "uses".',
@@ -29,7 +29,7 @@ class PropertyComponent extends Object {
 				$model = $controller->{$controller->modelNames[0]};
 
 				if(is_object($model)) {
-					$model->Behaviors->attach('Missingdetect.Property');
+					$model->Behaviors->attach('Missingdetect.Propertycheck');
 				}
 			}
 

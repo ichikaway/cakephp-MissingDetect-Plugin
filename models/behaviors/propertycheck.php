@@ -1,5 +1,5 @@
 <?php
-class PropertyBehavior extends ModelBehavior{
+class PropertycheckBehavior extends ModelBehavior{
 
 	function setup(&$model, $config = array()){
 
