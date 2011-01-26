@@ -1,6 +1,6 @@
 # CakePHP MissingDetect Plugin
 
-Missindetect plugin detects wrong property name and shows errors on the screen in DebugMode.
+Missingdetect plugin detects wrong property name and shows errors on the screen in DebugMode.
 If you use wrong property name such as Model::actAs, this plugin shows errors on the screen.
 
 ## Detection
