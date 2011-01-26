@@ -1,0 +1,24 @@
+# CakePHP MissingDetect Plugin
+
+Missindetect plugin detects wrong property name and shows errors on the screen in DebugMode.
+If you use wrong property name such as Model::actAs, this plugin shows errors on the screen.
+
+## Detection
+Controller: use, helper, component
+Model: actAs
+
+
+## Installation
+
+* Clone/Copy the files in this directory into `app/plugins/missingdetect`
+* Include the propertycheck component in your `app_controller.php`:
+   * `var $components = array('Missingdetect.Propertycheck');`
+* Set debug mode to at least 1.
+
+
+## Demo screen
+![Demo image](/ichikaway/cakephp-MissingDetect-Plugin/master/img/demo.jpg)
+
+
+
+
