@@ -1,8 +1,8 @@
 <?php
 
 class PropertyModel extends CakeTestModel {
-		var $useTable = false;
-		var $actAs = array('dummy');
+	var $useTable = false;
+	var $actAs = array('dummy');
 }
 
 
@@ -14,7 +14,7 @@ class PropertyTestController extends Controller {
 class PropertyWrongTestController extends Controller {
 	var $uses = array();
 	var $components = array('Missingdetect.Propertycheck');
-	
+
 	var $use = array('dummy');
 	var $component = array('dummy');
 	var $helper = array('dummy');
@@ -24,7 +24,7 @@ class PropertyWrongTestController extends Controller {
 class PropertyModelTestController extends Controller {
 	var $uses = array('PropertyModel');
 	var $components = array('Missingdetect.Propertycheck');
-	
+
 }
 
 
@@ -57,11 +57,11 @@ class PropertyComponentTest extends CakeTestCase {
 		$Controller->Component->init($Controller);
 		$Controller->Component->initialize($Controller);
 
-    $expect = array(
-      'use' => 'You are using "use property" in your Controller. use "uses".',
-      'component' => 'You are using "component property" in your Controller. use "components".',
-      'helper' => 'You are using "helper property" in your Controller. use "helpers".',
-    );
+		$expect = array(
+				'use' => 'You are using "use property" in your Controller. use "uses".',
+				'component' => 'You are using "component property" in your Controller. use "components".',
+				'helper' => 'You are using "helper property" in your Controller. use "helpers".',
+				);
 
 		$this->assertEqual(Configure::read('Missingdetect.Controller'), $expect);
 
@@ -76,8 +76,8 @@ class PropertyComponentTest extends CakeTestCase {
 		$Controller->Component->init($Controller);
 		$Controller->Component->initialize($Controller);
 
-    $expect = array('actAs' => 'You are using "actAs property" in your Mode. use "actsAs".');
-    $this->assertEqual(Configure::read('Missingdetect.Model'), $expect);
+		$expect = array('actAs' => 'You are using "actAs property" in your Mode. use "actsAs".');
+		$this->assertEqual(Configure::read('Missingdetect.Model'), $expect);
 
 		Configure::delete('Missingdetect.Model', null);
 

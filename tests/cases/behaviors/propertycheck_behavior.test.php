@@ -2,10 +2,10 @@
 
 class PropertyBase extends CakeTestModel
 {
-  var $actsAs = array('Missingdetect.propertycheck');
+	var $actsAs = array('Missingdetect.propertycheck');
 
-  var $useTable = false;
-  var $useDbConfig = false;
+	var $useTable = false;
+	var $useDbConfig = false;
 
 }
 
@@ -41,7 +41,7 @@ class PropertyTestCase extends CakeTestCase
 		$model = ClassRegistry::init('PropertyWrong');
 		$expect = array('actAs' => 'You are using "actAs property" in your Mode. use "actsAs".');
 		$this->assertEqual(Configure::read('Missingdetect.Model'), $expect);
-		
+
 	}
 
 }
