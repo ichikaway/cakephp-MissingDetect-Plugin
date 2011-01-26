@@ -25,7 +25,7 @@ class PropertycheckComponent extends Object {
 			Configure::write('Missingdetect.Controller', $this->errors);
 		}
 
-		if(!empty($controller->modelNames)) {
+		if(!empty($controller->modelNames[0])) {
 			$model = $controller->{$controller->modelNames[0]};
 
 			if(is_object($model)) {
