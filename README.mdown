@@ -4,8 +4,8 @@ Missindetect plugin detects wrong property name and shows errors on the screen i
 If you use wrong property name such as Model::actAs, this plugin shows errors on the screen.
 
 ## Detection
-*Controller: use, helper, component
-*Model: actAs
+* Controller: use, helper, component
+* Model: actAs
 
 
 ## Installation
